@@ -3,6 +3,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #define ONE_WIRE_BUS D4
+#include <secure.h>
 // to be changed
 // the number that you connect with ds18b20
 // the number can be activated is case by case
@@ -18,7 +19,7 @@ void setup() {
   // to be changed
   // We start by connecting to a WiFi network
   // Wifi name and the password
-  WiFiMulti.addAP("U+Net4573", "4000016008");
+  WiFiMulti.addAP("sercure_id", "secure_pwd");
 
   Serial.println();
   Serial.println();
